@@ -11,8 +11,8 @@ def map(arr)
 end
 
 
-def reduce(arr)
-  result = 0
+def reduce(arr, start=0)
+  result = start
   
   i = 0
   while i < arr.length do
