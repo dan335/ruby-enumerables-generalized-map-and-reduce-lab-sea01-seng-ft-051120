@@ -20,9 +20,6 @@ def reduce(arr, start=nil)
     i = 1
   end
   
-  result = start
-  
-  i = 0
   while i < arr.length do
     result = yield(result, arr[i])
     puts arr[i], result
