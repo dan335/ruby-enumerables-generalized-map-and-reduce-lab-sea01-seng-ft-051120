@@ -9,3 +9,16 @@ def map(arr)
   
   newArr
 end
+
+
+def reduce(arr)
+  result = 0
+  
+  i = 0
+  while i < arr.length do
+    result += yield(arr[i])
+    i += 1
+  end
+  
+  result
+end
