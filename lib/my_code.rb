@@ -11,7 +11,15 @@ def map(arr)
 end
 
 
-def reduce(arr, start=0)
+def reduce(arr, start=nil)
+  if start
+    result = start
+    i = 0
+  else
+    result = arr[0]
+    i = 1
+  end
+  
   result = start
   
   i = 0
