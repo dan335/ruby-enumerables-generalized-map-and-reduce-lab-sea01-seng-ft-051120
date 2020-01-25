@@ -1,6 +1,11 @@
 def map(arr)
+  newArr = []
+  
   i = 0
   while i < arr.length do
-    yeld arr[i]
+    newArr << yeld(arr[i])
+    i += 1
   end
+  
+  newArr
 end
